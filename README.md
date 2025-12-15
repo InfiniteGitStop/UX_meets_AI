@@ -41,3 +41,4 @@ This project is open-source and free to use for educational purposes.
 ## Live Demo
 
 The site is hosted on GitHub Pages:
+https://infinitegitstop.github.io/UX_meets_AI/

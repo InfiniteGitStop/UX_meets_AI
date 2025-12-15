@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Career Roadmap for UI/UX Designers</title>
+  <style>
+    body {
+      font-family: Inter, Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 3rem 1.5rem;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      max-width: 800px;
+      font-size: 1.1rem;
+      margin: auto;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #93c5fd;
+    }
+    .highlight {
+      background: rgba(99,102,241,0.15);
+      padding: 1rem;
+      border-left: 4px solid #6366f1;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h4 { margin-top: 0; color: #a5b4fc; }
+    ul { padding-left: 1.2rem; display: none; margin-top: 1rem; }
+    li { margin-bottom: 0.6rem; }
+    footer {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    /* Color-coded sections */
+    .color-tools { border-left: 4px solid #facc15; padding-left: 0.5rem; }
+    .color-courses { border-left: 4px solid #22c55e; padding-left: 0.5rem; }
+    .color-portfolio { border-left: 4px solid #f43f5e; padding-left: 0.5rem; }
+    .color-salary { border-left: 4px solid #3b82f6; padding-left: 0.5rem; }
+    .color-roadmap { border-left: 4px solid #10b981; padding-left: 0.5rem; }
+    .color-prep { border-left: 4px solid #8b5cf6; padding-left: 0.5rem; }
+
+    /* Small toggle button for instructions */
+    .toggle-button {
+      color: #93c5fd;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI Career Roadmap for UI/UX Designers</h1>
+  <p>A practical, high-paying transition guide for designers who want to integrate AI, move into global roles, and future-proof their careers.</p>
+</header>
+
+<section>
+  <h2>Why AI + Design?</h2>
+  <p>Pure UI/UX roles are reaching a salary ceiling. Designers who understand AI systems, LLM behavior, and Human–AI interaction are becoming critical hires across SaaS, fintech, enterprise, and startups.</p>
+  <div class="highlight">
+    <strong>Reality:</strong> Companies don’t need more screens — they need designers who can shape how humans work with AI.
+  </div>
+</section>
+
+<section>
+  <h2>Best AI Career Paths</h2>
+  <div class="card-grid">
+    <div class="card" onclick="toggleCard(this)">
+      <h4>AI Product Designer</h4>
+      <ul class="color-tools">
+        <li>Design AI-powered workflows & copilots</li>
+        <li>Handle trust, explainability & failure states</li>
+        <li>Work closely with ML & product teams</li>
+        <li><strong>Pay:</strong> ₹25–45 LPA (India) · $80k–120k (Remote)</li>
+        <li>Practical Start: Redesign a current app with an AI assistant</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Conversational UX Designer</h4>
+      <ul class="color-tools">
+        <li>Chatbot & voice assistant UX</li>
+        <li>Prompt flows & context handling</li>
+        <li>LLM limitations & recovery patterns</li>
+        <li><strong>Pay:</strong> ₹18–35 LPA · $70k–100k</li>
+        <li>Practical Start: Prototype a conversational AI demo in Figma or Framer</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>UX Engineer (Design + AI)</h4>
+      <ul class="color-tools">
+        <li>Build interfaces using React</li>
+        <li>Integrate AI APIs</li>
+        <li>Prototype real AI products</li>
+        <li><strong>Pay:</strong> ₹30–50 LPA · $90k+</li>
+        <li>Practical Start: Build a semi-working AI demo using Framer + API</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Tools to Learn</h2>
+  <div class="card-grid">
+    <div class="card" onclick="toggleCard(this)">
+      <h4>ChatGPT / Claude (Advanced)</h4>
+      <ul class="color-tools">
+        <li>Prompt chaining, role-based prompting, output evaluation</li>
+        <li>Handling hallucinations & iterative design</li>
+        <li>Practice: Redesign an app with AI assistant → document prompts & results</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>LangChain (Conceptual)</h4>
+      <ul class="color-tools">
+        <li>Understand RAG, memory, retrieval, UX implications</li>
+        <li>Practice: Mock a retrieval workflow and fallback states</li>
+        <li>Focus: Conceptual, not deep coding</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Figma + Framer</h4>
+      <ul class="color-tools">
+        <li>Figma tokens, multi-state AI components</li>
+        <li>Framer for interactive AI demos</li>
+        <li>Practice: Convert a dashboard into AI-interactive prototype</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Courses That Actually Matter</h2>
+  <div class="card-grid">
+    <div class="card" onclick="toggleCard(this)">
+      <h4>AI for Designers – DeepLearning.AI</h4>
+      <ul class="color-courses">
+        <li>Duration: ~10 hours</li>
+        <li>Focus: AI mental models + product thinking</li>
+        <li>Action: Design a mock AI assistant workflow while learning</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Human-AI Interaction – Coursera</h4>
+      <ul class="color-courses">
+        <li>Focus: UX, trust, explainability & ethics</li>
+        <li>Action: Draft error-handling UX flows for AI products</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Building AI Products – Reforge</h4>
+      <ul class="color-courses">
+        <li>Focus: Metrics, AI product decisions</li>
+        <li>Action: Map AI workflow with constraints (latency, cost, user impact)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Portfolio Transformation</h2>
+  <div class="card-grid">
+    <div class="card" onclick="toggleCard(this)">
+      <h4>AI-ify Existing Work</h4>
+      <ul class="color-portfolio">
+        <li>Convert old projects into AI-powered case studies</li>
+        <li>Example: Finance dashboard → AI copilot answers queries, flags anomalies, explains recommendations</li>
+        <li>Action: Include constraints, outcomes, trade-offs, and design reasoning</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>90-Day Roadmap</h2>
+  <div class="card-grid">
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Month 1: Tools</h4>
+      <ul class="color-roadmap">
+        <li>Learn ChatGPT / Claude advanced techniques</li>
+        <li>Understand RAG concepts in LangChain</li>
+        <li>Master Figma AI states + Framer basics</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Month 2: Courses & Practice</h4>
+      <ul class="color-roadmap">
+        <li>Complete DeepLearning.AI + Coursera courses</li>
+        <li>Build 2 small AI prototypes (Figma/Framer)</li>
+        <li>Document lessons learned</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Month 3: Portfolio & Job Prep</h4>
+      <ul class="color-roadmap">
+        <li>Transform 1–2 portfolio projects into AI-powered case studies</li>
+        <li>Prepare resume & LinkedIn for global AI roles</li>
+        <li>Practice mock interview questions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Global Remote Job Prep</h2>
+  <div class="card-grid">
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Reposition Title & Keywords</h4>
+      <ul class="color-prep">
+        <li>Title: AI Product Designer | Human-AI Interaction Designer</li>
+        <li>Keywords: AI, RAG, LLM, trust, prompt design, copilots</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Platforms</h4>
+      <ul class="color-prep">
+        <li>Toptal, Turing, Wellfound, LinkedIn remote filters</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>Interview Prep</h4>
+      <ul class="color-prep">
+        <li>“Design an AI assistant for X scenario”</li>
+        <li>“What happens when AI fails?”</li>
+        <li>“How do you balance automation vs trust?”</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Salary Trajectory</h2>
+  <div class="card-grid">
+    <div class="card" onclick="toggleCard(this)">
+      <h4>UX/UI Designer</h4>
+      <ul class="color-salary">
+        <li>India: ₹12–18 LPA</li>
+        <li>Global Remote: Rare</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>AI Product Designer</h4>
+      <ul class="color-salary">
+        <li>India: ₹25–45 LPA</li>
+        <li>Global Remote: $80k–120k</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>UX Engineer</h4>
+      <ul class="color-salary">
+        <li>India: ₹30–50 LPA</li>
+        <li>Global Remote: $90k+</li>
+      </ul>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h4>AI PM</h4>
+      <ul class="color-salary">
+        <li>India: ₹30–60 LPA</li>
+        <li>Global Remote: $100k+</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Built as a reference roadmap for designers transitioning into AI-powered global careers.</p>
+</footer>
+
+<script>
+function toggleCard(card) {
+  const ul = card.querySelector('ul');
+  if (ul.style.display === 'block') {
+    ul.style.display = 'none';
+  } else {
+    ul.style.display = 'block';
+  }
+}
+</script>
+
+</body>
+</html>
